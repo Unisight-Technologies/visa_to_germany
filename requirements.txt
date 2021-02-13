@@ -1,0 +1,8 @@
+django
+gunicorn
+pillow
+django-cleanup
+beautifulsoup4
+whitenoise
+django-environ
+requests
