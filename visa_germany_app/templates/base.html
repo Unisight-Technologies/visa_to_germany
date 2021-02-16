@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Visa to Germany</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <meta property="og:image" content="{% static 'assets/images/VisaTo_New Zealand-logo-cropped' %}">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/VisaTo_GERMANY-logo-8E-final.jpg' %}" rel="icon">
+  <link href="{% static 'assets/img/VisaTo_GERMANY-logo-8E-final.jpg' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna - v4.0.0
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center header-transparent">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <div class="logo">
+      <a href="{% url 'index' %}" class="logo1"><img src="{% static 'assets/img/VisaTo_GERMANY-logo-8E-final.jpg' %}" alt="" class="img-fluid"></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+    </div>
+    <div class="nav-inspiring">
+      <p class="font-italic">"Unity and justice and freedom"<br></p>
+    </div>
+    <a href="#"> <img src="{% static 'assets/img/Animated-Flag-Germany.gif' %}" style="height:40px"> </a>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="active " href="{% url 'index' %}">Home</a></li>
+        <li id="news-btn" class="news-btn"><a href="#">Breaking News</a></li>
+        <li><a href="{% url 'aboutus' %}">About Us</a></li>
+        <li class="drop-down"><a href="#">Services</a>
+        <li class="dropdown"><a href="#"><span>Migration Services</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li>  <a href="#">Italy</a> </li>
+            <li>  <a href="#">Spain</a> </li>
+            <li>  <a href="https://visatomalta.com/">Malta</a> </li>
+            <li>  <a href="https://visatoportugal.pro/">Portugal</a> </li>
+            <li>  <a href="#">Greece</a> </li>
+            <li>  <a href="#">Cyprus</a> </li>
+            <li>  <a href="#">Ireland</a> </li>
+            <li>  <a href="https://visatocanada.pro/">Canada</a> </li>
+            <li>  <a href="https://www.visatonewzealand.pro/">New Zealand</a></li>
+            <li>  <a href="https://www.visatoaustralia.pro/">Australia</a> </li>
+            <li>  <a href="#">Denmark</a> </li>
+            </li>
+          </ul>
+        </li>
+        <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    <!-- .navbar -->
+
+  </div>
+</header>
+
+<!-- End Header -->
+
+{% block body_block %}
+
+{% endblock %}
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'aboutus' %}">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Migration Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Italy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Spain</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://visatomalta.com/">Malta</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://visatoportugal.pro/">Portugal</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Greece</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Cyprus</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Ireland</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://visatocanada.pro/">Canada</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.visatonewzealand.pro/">New Zealand</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.visatoaustralia.pro/">Australia</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> Info@visatogermany.com<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About Moderna</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/visa.togermany/" class="instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Visa To Germany</span></strong>. All Rights Reserved
+        &copysr; Powered by <strong> <span><a style="color: white;" href="https://www.instagram.com/unisighttechnologies/?hl=en">Unisight Technologies</a> and Digitalcue media</span></strong>
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

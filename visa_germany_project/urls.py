@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from visa_germany_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.Homepage.as_view(),name="index"),
+    path('aboutus/', views.Aboutpage.as_view(),name="aboutus"),
+    path('contactus/', views.Contactpage.as_view(),name="contactus"),
+
 ]
