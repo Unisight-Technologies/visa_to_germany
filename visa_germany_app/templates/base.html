@@ -57,7 +57,17 @@
         <li><a class="active " href="{% url 'index' %}">Home</a></li>
         <li id="news-btn" class="news-btn"><a href="#">Breaking News</a></li>
         <li><a href="{% url 'aboutus' %}">About Us</a></li>
-        <li class="drop-down"><a href="#">Services</a>
+        <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#"> Student Visa</a></li>
+            <li><a href="#"> Germany Working Visa</a></li>
+            <li><a href="#"> Germany Tourist and Visitor Visa</a></li>
+            <li><a href="#"> German Language Course Visa</a></li>
+            <li><a href="#"> Germany Family Reunion Visa</a></li>
+            <li><a href="#"> Germany Visa Fees</a></li>
+
+          </ul>        </li>
+
         <li class="dropdown"><a href="#"><span>Migration Services</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li>  <a href="#">Italy</a> </li>
@@ -71,7 +81,6 @@
             <li>  <a href="https://www.visatonewzealand.pro/">New Zealand</a></li>
             <li>  <a href="https://www.visatoaustralia.pro/">Australia</a> </li>
             <li>  <a href="#">Denmark</a> </li>
-            </li>
           </ul>
         </li>
         <li><a href="{% url 'contactus' %}">Contact Us</a></li>
@@ -79,6 +88,7 @@
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
     <!-- .navbar -->
+    <div style="background-color: #cc1616; margin-left: 10px;" class="drop-down1" id="google_translate_element"></div>
 
   </div>
 </header>
@@ -191,6 +201,13 @@
 
   <!-- Template Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
+
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
