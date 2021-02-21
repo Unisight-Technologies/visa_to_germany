@@ -276,7 +276,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #5edaf3;
+  color: #ffc107;
 }
 
 .navbar-mobile .getstarted {
@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #5edaf3;
+  color: #ffc107;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -345,7 +345,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   top: 0;
   width: 130%;
   height: 96%;
-  background: #5edaf3;
+  background: #ffc107;
   opacity: 0.3;
   z-index: 0;
   border-radius: 0 0 50% 50%;
@@ -405,11 +405,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #5edaf3;
+  border: 2px solid #ffc107;
 }
 
 #hero .btn-get-started:hover {
-  background: #5edaf3;
+  background: #ffc107;
   color: #fff;
   text-decoration: none;
 }
@@ -507,11 +507,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #5edaf3;
+  border: 2px solid #ffc107;
 }
 
 #hero-no-slider .btn-get-started:hover {
-  background: #5edaf3;
+  background: #ffc107;
   color: #fff;
   text-decoration: none;
 }
@@ -539,8 +539,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 28px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -563,7 +562,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #5edaf3;
+  background: #ffc107;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -634,6 +633,7 @@ section {
   transition: all 0.3s ease-in-out;
   text-align: center;
   border: 1px solid #fff;
+  width: -webkit-fill-available;
 }
 
 .services .icon {
@@ -667,16 +667,16 @@ section {
   margin-bottom: 0;
 }
 
-.services .icon-box-pink .icon {
-  background: #fceef3;
+.services .icon-box-yellow .icon {
+  background: #ffc107;
 }
 
-.services .icon-box-pink .icon i {
-  color: #ff689b;
+.services .icon-box-yellow .icon i {
+  color: #f7f4ea;
 }
 
-.services .icon-box-pink:hover {
-  border-color: #ff689b;
+.services .icon-box-yellow:hover {
+  border-color: #ffc107;
 }
 
 .services .icon-box-cyan .icon {
@@ -715,6 +715,79 @@ section {
   border-color: #2282ff;
 }
 
+/* specials */
+
+.specials {
+  overflow: hidden;
+}
+
+.specials .nav-tabs {
+  border: 0;
+}
+
+.specials .nav-link {
+  border: 0;
+  padding: 12px 15px;
+  transition: 0.3s;
+  color: #000000;
+  border-radius: 0;
+  border-right: 2px solid #212529;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.specials .nav-link:hover {
+  color: #212529;
+}
+
+.specials .nav-link.active {
+  color: #ffffff;
+  background: #b56928;
+  border-color: #b56928;
+}
+
+.specials .nav-link:hover {
+  border-color: #212529;
+}
+
+.specials .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.specials .tab-content ul{
+  list-style: none;
+}
+
+.specials .tab-content ul i{
+  color: #212529;
+}
+
+.specials .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.specials .details p {
+  color: #000000;
+}
+
+
+.specials .details p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .specials .nav-link {
+    border: 0;
+    padding: 15px;
+  }
+}
+
+
+
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
@@ -740,12 +813,12 @@ section {
 }
 
 .why-us .icon-box .icon i {
-  color: #5edaf3;
+  color: #ffc107;
   font-size: 32px;
 }
 
 .why-us .icon-box:hover .icon {
-  background: #5edaf3;
+  background: #ffc107;
 }
 
 .why-us .icon-box:hover .icon i {
@@ -766,7 +839,7 @@ section {
 }
 
 .why-us .icon-box .title a:hover {
-  color: #5edaf3;
+  color: #ffc107;
 }
 
 .why-us .icon-box .description {
@@ -787,7 +860,7 @@ section {
 .why-us .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#5edaf3 50%, rgba(104, 164, 196, 0.4) 52%);
+  background: radial-gradient(#ffc107 50%, rgba(104, 164, 196, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -835,7 +908,7 @@ section {
 }
 
 .why-us .play-btn:hover::after {
-  border-left: 15px solid #5edaf3;
+  border-left: 15px solid #ffc107;
   transform: scale(20);
 }
 
@@ -903,7 +976,7 @@ section {
 .features ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #5edaf3;
+  color: #ffc107;
 }
 
 .features p:last-child {
@@ -943,7 +1016,7 @@ section {
 .facts .counters span {
   font-size: 48px;
   display: block;
-  color: #5edaf3;
+  color: #ffc107;
 }
 
 .facts .counters p {
@@ -1052,11 +1125,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #5edaf3;
+  border: 1px solid #ffc107;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5edaf3;
+  background-color: #ffc107;
 }
 
 /*--------------------------------------------------------------
@@ -1120,7 +1193,7 @@ section {
 }
 
 .service-details .read-more a:hover {
-  color: #5edaf3;
+  color: #ffc107;
 }
 
 .service-details .card:hover img {
@@ -1128,11 +1201,11 @@ section {
 }
 
 .service-details .card:hover .card-body {
-  border-color: #5edaf3;
+  border-color: #ffc107;
 }
 
 .service-details .card:hover .card-body .card-title a {
-  color: #5edaf3;
+  color: #ffc107;
 }
 
 /*--------------------------------------------------------------
@@ -1158,7 +1231,7 @@ section {
 
 .pricing h4 {
   font-size: 46px;
-  color: #5edaf3;
+  color: #ffc107;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 25px;
@@ -1183,7 +1256,7 @@ section {
 }
 
 .pricing ul i {
-  color: #5edaf3;
+  color: #ffc107;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1214,7 +1287,7 @@ section {
 }
 
 .pricing .get-started-btn:hover {
-  background: #5edaf3;
+  background: #ffc107;
 }
 
 .pricing .featured {
@@ -1223,7 +1296,7 @@ section {
 }
 
 .pricing .featured .get-started-btn {
-  background: #5edaf3;
+  background: #ffc107;
 }
 
 .pricing .featured .get-started-btn:hover {
@@ -1280,8 +1353,8 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  border-color: #5edaf3;
-  color: #5edaf3;
+  border-color: #ffc107;
+  color: #ffc107;
 }
 
 .portfolio .portfolio-item {
@@ -1354,11 +1427,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #5edaf3;
+  border: 1px solid #ffc107;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5edaf3;
+  background-color: #ffc107;
 }
 
 .portfolio-details .portfolio-info {
@@ -1439,7 +1512,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #5edaf3;
+  color: #ffc107;
 }
 
 .team .member .social i {
@@ -1459,7 +1532,7 @@ section {
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 15px;
-  color: #5edaf3;
+  color: #ffc107;
 }
 
 .team .member .member-info p {
@@ -1572,7 +1645,7 @@ section {
 }
 
 .contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
-  background-color: #5edaf3;
+  background-color: #ffc107;
 }
 
 .contact .php-email-form input {
@@ -1658,7 +1731,7 @@ section {
 }
 
 .blog .entry .entry-title a:hover {
-  color: #5edaf3;
+  color: #ffc107;
 }
 
 .blog .entry .entry-meta {
@@ -1703,7 +1776,7 @@ section {
 
 .blog .entry .entry-content .read-more a {
   display: inline-block;
-  background: #5edaf3;
+  background: #ffc107;
   color: #fff;
   padding: 6px 20px;
   transition: 0.3s;
@@ -1766,7 +1839,7 @@ section {
 }
 
 .blog .entry .entry-footer a:hover {
-  color: #5edaf3;
+  color: #ffc107;
 }
 
 .blog .entry .entry-footer .cats {
@@ -1875,7 +1948,7 @@ section {
 }
 
 .blog .blog-comments .comment h5 a:hover {
-  color: #5edaf3;
+  color: #ffc107;
 }
 
 .blog .blog-comments .comment h5 .reply {
@@ -1975,7 +2048,7 @@ section {
 }
 
 .blog .blog-pagination li.active, .blog .blog-pagination li:hover {
-  background: #5edaf3;
+  background: #ffc107;
 }
 
 .blog .blog-pagination li.active a, .blog .blog-pagination li:hover a {
@@ -2025,7 +2098,7 @@ section {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: #5edaf3;
+  background: #ffc107;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -2055,7 +2128,7 @@ section {
 }
 
 .blog .sidebar .categories ul a:hover {
-  color: #5edaf3;
+  color: #ffc107;
 }
 
 .blog .sidebar .categories ul a span {
@@ -2085,7 +2158,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #5edaf3;
+  color: #ffc107;
 }
 
 .blog .sidebar .recent-posts time {
@@ -2121,8 +2194,8 @@ section {
 
 .blog .sidebar .tags ul a:hover {
   color: #fff;
-  border: 1px solid #5edaf3;
-  background: #5edaf3;
+  border: 1px solid #ffc107;
+  background: #ffc107;
 }
 
 .blog .sidebar .tags ul a span {
