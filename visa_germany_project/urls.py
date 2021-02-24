@@ -23,5 +23,7 @@ urlpatterns = [
     path('contactus/', views.Contactpage.as_view(),name="contactus"),
     path('student_visa/', views.Studentpage.as_view(),name="student_visa"),
     path('working_visa/', views.Workingpage.as_view(),name="working_visa"),
+    path('tourist_visa/', views.Touristpage.as_view(),name="tourist_visa"),
+    path('language_visa/', views.Languagepage.as_view(),name="language_visa"),
 
 ]

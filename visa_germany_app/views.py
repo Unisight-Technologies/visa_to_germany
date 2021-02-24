@@ -16,3 +16,9 @@ class Studentpage(TemplateView):
 
 class Workingpage(TemplateView):
     template_name= "working_visa.html"
+
+class Touristpage(TemplateView):
+    template_name= "tourist_visa.html"
+
+class Languagepage(TemplateView):
+    template_name= "language_visa.html"
