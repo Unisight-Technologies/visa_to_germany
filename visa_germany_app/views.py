@@ -22,3 +22,9 @@ class Touristpage(TemplateView):
 
 class Languagepage(TemplateView):
     template_name= "language_visa.html"
+
+class Feespage(TemplateView):
+    template_name= "visa_fees.html"
+
+class Familypage(TemplateView):
+    template_name= "family_reunion.html"

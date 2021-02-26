@@ -25,7 +25,9 @@
     <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
   <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
   <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
-  <!-- <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet"> -->
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
 
 
   <!-- Template Main CSS File -->
@@ -64,8 +66,8 @@
           <ul>
             <li><a href="{% url 'student_visa' %}"> Student Visa</a></li>
             <li><a href="{% url 'working_visa' %}"> Germany Working Visa</a></li>
-            <li><a href="#"> Germany Tourist and Visitor Visa</a></li>
-            <li><a href="#"> German Language Course Visa</a></li>
+            <li><a href="{% url 'tourist_visa' %}"> Germany Tourist and Visitor Visa</a></li>
+            <li><a href="{% url 'language_visa' %}"> German Language Course Visa</a></li>
             <li><a href="#"> Germany Family Reunion Visa</a></li>
             <li><a href="#"> Germany Visa Fees</a></li>
 

@@ -2395,7 +2395,7 @@ section {
   content: '';
   width: 14px;
   height: 2px;
-  background: #333;
+  background: #000;
   position: absolute;
   top: calc(50% - 1px);
   right: 1rem;
@@ -2425,11 +2425,28 @@ section {
 }
 
 .card{
-  background-color: #ffc107!important;
+  background-color: #000!important;
+   color: #b56928;
 }
 
 .bg-yellow{
-  background-color: #ffc107ba;
+  background-color: #000;
+}
+
+.text-dark{
+  color: #d47f37 !important;
+}
+
+a.text-dark:hover{
+  color: #b56928 !important;
+}
+
+a.text-dark:focus{
+  color: #d47f37 !important;
+}
+
+.lead{
+  justify-content: left !important;
 }
 /*
 *

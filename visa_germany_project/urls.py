@@ -25,5 +25,7 @@ urlpatterns = [
     path('working_visa/', views.Workingpage.as_view(),name="working_visa"),
     path('tourist_visa/', views.Touristpage.as_view(),name="tourist_visa"),
     path('language_visa/', views.Languagepage.as_view(),name="language_visa"),
+    path('visa_fees/', views.Feespage.as_view(),name="visa_fees"),
+    path('family_reunion/', views.Familypage.as_view(),name="family_reunion"),
 
 ]
