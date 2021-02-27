@@ -2461,3 +2461,7 @@ body {
   background: linear-gradient(to left, #b56928, #f9c47b);
   min-height: 100vh;
 }
+tbody{
+  background-color: #000;
+  color: #d4843f;
+}
