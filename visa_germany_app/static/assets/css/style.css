@@ -2218,8 +2218,7 @@ section {
 }
 
 #footer .footer-newsletter {
-  padding: 50px 0;
-  background: #803c0d; //0d2735
+  padding:  0;
 }
 
 #footer .footer-newsletter h4 {
@@ -2428,16 +2427,16 @@ section {
 }
 
 .card{
-  background-color: #000!important;
-   color: #b56928;
+  background-color: #ffc107!important;
+   color: #000;
 }
 
 .bg-yellow{
-  background-color: #000;
+  background-color: #ffc107;
 }
 
 .text-dark{
-  color: #d47f37 !important;
+  color: #000 !important;
 }
 
 a.text-dark:hover{
@@ -2445,7 +2444,7 @@ a.text-dark:hover{
 }
 
 a.text-dark:focus{
-  color: #d47f37 !important;
+  color: #000 !important;
 }
 
 .lead{
@@ -2465,6 +2464,32 @@ body {
   min-height: 100vh;
 }
 tbody{
-  background-color: #000;
-  color: #d4843f;
+  background-color: #ffc107;
+  color: #000;
+}
+
+
+#flag {
+  width: auto;
+  height: auto;
+  box-sizing: content-box;
+  padding-top: 15px;
+  position: relative;
+  color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+
+}
+#flag:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 13px solid #eee;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
 }
