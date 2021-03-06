@@ -23,9 +23,9 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = '7pzd(a)==$&c-%+%hb$5j-g8r#8+dm^gez(q1(nn&7g_wn5bo-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'visatogermany.com']
 
 
 # Application definition
@@ -121,3 +121,4 @@ USE_TZ = True
 import os.path
 STATIC_URL = '/static/'
 STATIC_FILES_DIRS = (os.path.join('static'),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
