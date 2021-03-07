@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
 from pathlib import Path
+import socket
+import environ
+env = environ.Env()
+# reading .env file
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,9 +28,13 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = '7pzd(a)==$&c-%+%hb$5j-g8r#8+dm^gez(q1(nn&7g_wn5bo-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'visatogermany.com']
+DEBUG = False
+if(socket.gethostname()=="Ananya-PC"):
+    DEBUG = True
+
+
+ALLOWED_HOSTS = ['127.0.0.1', 'visatogermany.com','www.visatogermany.com']
 
 
 # Application definition
