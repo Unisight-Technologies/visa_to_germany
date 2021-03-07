@@ -2493,3 +2493,45 @@ tbody{
   border-left: 55px solid transparent;
   border-right: 55px solid transparent;
 }
+
+
+
+.blog-box{
+    margin-top: 50px;
+    padding: 15px;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    border: 2px #DDDDF0 solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.blog-img{
+  width: 70%;
+  float: right;
+  border-radius: 5px;
+}
+
+#blogs{
+  /* background: white; */
+}
+
+@media (max-width: 600px) {
+
+  .blog-para{
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .blog-head{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .blog-author{
+    display: none;
+  }
+}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+
+<main id="main">
+
+<section id="blogs">
+<div class="section-title">
+  <span style="color: black;"><h2>Breaking News</h2></span>
+
+</div>
+  <div class="container">
+
+    {% for blog in news %}
+          <div class="blog-box">
+            <div class="row" data-aos="fade-up">
+
+            <div class="col">
+              <a href="{{ blog.url }}"><h3 class="blog-head">{{ blog.title }}</h3></a>
+
+              <p class="blog-date">{{ blog.date }}</p>
+
+
+              <p class="blog-para">{{ blog.description }}</p>
+
+            </div>
+
+          </div>
+
+          </div>
+    {% endfor %}
+  </div>
+</section>
+
+
+</main>
+
+{% endblock %}

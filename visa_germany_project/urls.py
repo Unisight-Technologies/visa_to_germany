@@ -27,5 +27,7 @@ urlpatterns = [
     path('language_visa/', views.Languagepage.as_view(),name="language_visa"),
     path('visa_fees/', views.Feespage.as_view(),name="visa_fees"),
     path('family_reunion/', views.Familypage.as_view(),name="family_reunion"),
+    path('blogs_news/', views.Newspage.as_view(),name="blogs_news"),
+    path('refresh/', views.refresh, name='refresh'),
 
 ]
