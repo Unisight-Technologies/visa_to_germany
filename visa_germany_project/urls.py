@@ -28,6 +28,7 @@ urlpatterns = [
     path('visa_fees/', views.Feespage.as_view(),name="visa_fees"),
     path('family_reunion/', views.Familypage.as_view(),name="family_reunion"),
     path('blogs_news/', views.Newspage.as_view(),name="blogs_news"),
+    path('coming_soon/', views.Comingpage.as_view(),name="coming_soon"),
     path('refresh/', views.refresh, name='refresh'),
 
 ]

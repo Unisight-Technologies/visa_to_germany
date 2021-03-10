@@ -38,6 +38,8 @@ class Feespage(TemplateView):
 
 class Familypage(TemplateView):
     template_name= "family_reunion.html"
+class Comingpage(TemplateView):
+    template_name= "coming_soon.html"
 
 
 class Newspage(View):
