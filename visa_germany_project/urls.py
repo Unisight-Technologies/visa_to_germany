@@ -29,6 +29,11 @@ urlpatterns = [
     path('family_reunion/', views.Familypage.as_view(),name="family_reunion"),
     path('blogs_news/', views.Newspage.as_view(),name="blogs_news"),
     path('coming_soon/', views.Comingpage.as_view(),name="coming_soon"),
+    path('spain_coming_soon/',views.Spain_Comingpage.as_view(),name="spain_coming_soon"),
+    path('Denmark_coming_soon/',views.Denmark_Comingpage.as_view(),name="Denmark_coming_soon"),
+    path('Italy_coming_soon/',views.Italy_Comingpage.as_view(),name="Italy_coming_soon"),
+    path('Greece_coming_soon/',views.Greece_Comingpage.as_view(),name="Greece_comingsoon"),
+
     path('refresh/', views.refresh, name='refresh'),
 
 ]

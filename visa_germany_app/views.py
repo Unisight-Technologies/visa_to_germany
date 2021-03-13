@@ -41,6 +41,18 @@ class Familypage(TemplateView):
 class Comingpage(TemplateView):
     template_name= "coming_soon.html"
 
+class Spain_Comingpage(TemplateView):
+    template_name= "spain_coming_soon.html"
+
+class Denmark_Comingpage(TemplateView):
+    template_name= "Denmark_coming_soon.html"
+
+class Italy_Comingpage(TemplateView):
+    template_name= "Italy_coming_soon.html"
+
+class Greece_Comingpage(TemplateView):
+    template_name= "Greece_coming_soon.html"
+
 
 class Newspage(View):
     def get(self, request, *args, **kwargs):
