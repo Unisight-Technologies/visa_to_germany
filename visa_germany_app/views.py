@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 
 from . import scrap_news
-
+from . import mailHandler
 from . import models
 from .models import News
 import requests
@@ -20,6 +20,28 @@ class Aboutpage(TemplateView):
 
 class Contactpage(TemplateView):
     template_name= "contactus.html"
+    def post(self, request):
+
+        form = request.POST
+        name = form.get('name')
+        email = form.get('email')
+        phone = form.get('phone')
+        subject = form.get('subject')
+        message = form.get('message')
+
+        new_contact = models.Contact.objects.create(
+            name=name,
+            email=email,
+            phone=phone,
+            subject=subject,
+            message=message
+
+        )
+        new_contact.save()
+        mailHandler.sendMailToUser(name, email)
+        mailHandler.sendMailToVisaToCanada(name, email, phone, subject, message)
+        messages.success(request, "Your query has been successfully submitted. We will get back to you soon.")
+        return redirect("contactus")
 
 class Studentpage(TemplateView):
     template_name= "student_visa.html"

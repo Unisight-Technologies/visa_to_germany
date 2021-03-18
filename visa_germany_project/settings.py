@@ -30,7 +30,8 @@ SECRET_KEY = '7pzd(a)==$&c-%+%hb$5j-g8r#8+dm^gez(q1(nn&7g_wn5bo-'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = False
-if(socket.gethostname()=="Ananya-PC" or socket.gethostname()=="LAPTOP-V2D839IV"):
+if(socket.gethostname()=="Ananya-PC" or socket.gethostname()=="LAPTOP-V2D839IV" or socket.gethostname()=="DESKTOP-NPQN816"):
+    
     DEBUG = True
 
 

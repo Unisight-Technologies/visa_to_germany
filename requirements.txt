@@ -6,3 +6,4 @@ beautifulsoup4
 whitenoise
 django-environ
 requests
+sendgrid
