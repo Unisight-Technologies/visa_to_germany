@@ -627,7 +627,7 @@ section {
 }
 
 .services .icon-box {
-  padding: 30px;
+  padding: 40px;
   position: relative;
   overflow: hidden;
   margin: 0  0 40px 0;
@@ -637,6 +637,8 @@ section {
   text-align: center;
   border: 1px solid #fff;
   width: -webkit-fill-available;
+  /* height: -webkit-calc; */
+  height:85%;
 }
 
 .services .icon {
@@ -1565,6 +1567,7 @@ section {
 
 .contact .info-box {
   color: #444;
+  background-color: #FFF;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
