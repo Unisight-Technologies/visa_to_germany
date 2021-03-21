@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 65px;
 }
 
 #main {
@@ -114,6 +114,13 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-style: italic !important;
   margin-left: 10%;
 }
+
+@media (max-width: 412px) {
+  .nav-inspiring p {
+display: none;
+ }
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
