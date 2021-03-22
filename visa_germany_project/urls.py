@@ -33,6 +33,9 @@ urlpatterns = [
     path('Denmark_coming_soon/',views.Denmark_Comingpage.as_view(),name="Denmark_coming_soon"),
     path('Italy_coming_soon/',views.Italy_Comingpage.as_view(),name="Italy_coming_soon"),
     path('Greece_coming_soon/',views.Greece_Comingpage.as_view(),name="Greece_comingsoon"),
+    path('policy/',views.policy.as_view(),name="policy"),
+    path('terms/',views.terms.as_view(),name="terms"),
+    path('generaldisclaimer/',views.general.as_view(),name="general"),
 
     path('refresh/', views.refresh, name='refresh'),
 

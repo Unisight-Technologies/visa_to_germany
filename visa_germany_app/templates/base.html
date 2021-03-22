@@ -115,13 +115,32 @@
     <div class="container">
       <div class="row">
 
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-info">
+            <img class="footer-logo" style="width: 180px" src="/static/assets/img/VisaTo_GERMANY-logo-8E-final.jpg" alt="">
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> phone no<br>
+              <strong>Email:</strong> info@visatoireland.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/visa.togermany/" class="instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
         <div class="col-lg-3 col-md-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Home</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="{% url 'aboutus' %}">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'student_visa' %}">Student Visa</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'working_visa' %}">Germany Working Visa</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'visa_fees' %}">Germany Visa Fees</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'contactus' %}">Contact Us</a></li>
           </ul>
         </div>
 
@@ -144,29 +163,19 @@
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-contact">
-          <h4>Contact Us</h4>
-          <p>
-            A108 Adam Street <br>
-            New York, NY 535022<br>
-            United States <br><br>
-            <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> Info@visatogermany.com<br>
-          </p>
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Important Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'terms' %}">Terms of Service</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'policy' %}">Privacy Policy</a></li>
+            <li> <i class="bx bx-chevron-right"></i><a href="{% url 'general' %}">Disclaimer</a> </li>
 
+          </ul>
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-newsletter">
-          <h4>Our Newsletter</h4>
-           <form action="{% url 'coming_soon' %}" >
-            <input type="email" name="email"><input type="submit" value="Subscribe">
-          </form>
 
-          <div class="social-links mt-3">
-            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="https://www.instagram.com/visa.togermany/" class="instagram"><i class="bx bxl-instagram"></i></a>
-          </div>
-        </div>
+
+
 
       </div>
     </div>

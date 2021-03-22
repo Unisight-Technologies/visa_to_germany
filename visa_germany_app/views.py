@@ -75,6 +75,15 @@ class Italy_Comingpage(TemplateView):
 class Greece_Comingpage(TemplateView):
     template_name= "Greece_coming_soon.html"
 
+class policy(TemplateView):
+    template_name= "policy.html"
+
+class terms(TemplateView):
+    template_name= "terms.html"
+
+class general(TemplateView):
+    template_name= "generaldisclaimer.html"
+
 
 class Newspage(View):
     def get(self, request, *args, **kwargs):
