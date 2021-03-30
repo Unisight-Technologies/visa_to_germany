@@ -35,6 +35,7 @@ urlpatterns = [
     path('Greece_coming_soon/',views.Greece_Comingpage.as_view(),name="Greece_comingsoon"),
     path('policy/',views.policy.as_view(),name="policy"),
     path('terms/',views.terms.as_view(),name="terms"),
+    path('givesit/',views.givesit.as_view(),name="givesit"),
     path('generaldisclaimer/',views.general.as_view(),name="general"),
 
     path('refresh/', views.refresh, name='refresh'),
