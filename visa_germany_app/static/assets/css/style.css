@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 #header .logo img {
   padding: 0;
-  max-height: 65px;
+  max-height: 78px;
 }
 
 #main {
@@ -113,7 +113,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-style: italic !important;
   margin-left: 10%;
 }
-
+.flags {
+  margin-left: 5%;
+}
 
 @media (max-width: 412px) {
   .nav-inspiring p {
@@ -224,6 +226,17 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
+}
+
+/* google */
+
+
+.#main{
+  margin-top: 100px;
+}
+
+.goog-te-gadget-icon{
+  display:none;
 }
 
 /**
