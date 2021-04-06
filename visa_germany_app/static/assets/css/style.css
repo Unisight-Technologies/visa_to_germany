@@ -115,6 +115,14 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   border-left: 0;
 }
 
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+  #header .logo img {
+  padding-left:0 !important;
+  }
+}
 
 
 
