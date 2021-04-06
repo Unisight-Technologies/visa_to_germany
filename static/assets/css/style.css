@@ -115,6 +115,17 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   border-left: 0;
 }
 
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+  #header .logo img {
+  padding-left:0 !important;
+  }
+}
+
+
+
 
 
 #header {
@@ -122,7 +133,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  top:40px;
+  /* top:40px; */
   background: #b56928 !important;
 }
 
@@ -150,15 +161,16 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   text-decoration: none;
 }
 
+
 #header .logo img {
   padding-left: 28%;
   max-height: 83px;
+
 }
 
 @media (max-width: 992px) {
   #header {
     top: 0;
-
   }
 }
 
@@ -177,11 +189,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 @media (max-width: 412px) {
   .nav-inspiring p {
-display: none;
- }
+    display: none;
+  }
 }
-
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -288,6 +298,20 @@ display: none;
   }
 }
 
+/* google */
+
+
+.#main{
+  margin-top: 100px;
+}
+
+.goog-te-gadget-icon{
+  display:none;
+}
+
+.goog-te-gadget{
+  padding-left:10%;
+}
 /**
 * Mobile Navigation
 */
@@ -383,22 +407,6 @@ display: none;
 
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
-}
-
-
-
-/* google */
-
-.#main{
-  margin-top: 100px;
-}
-
-.goog-te-gadget-icon{
-  display:none;
-}
-
-.goog-te-gadget{
-  padding-left:10%;
 }
 
 /*--------------------------------------------------------------
@@ -720,7 +728,6 @@ section {
   text-align: center;
   border: 1px solid #fff;
   width: -webkit-fill-available;
-  /* height: -webkit-calc; */
   height:85%;
 }
 
@@ -2362,11 +2369,13 @@ section {
 } */
 
 #footer .footer-top .footer-info {
-    margin-bottom: 15px;
-    background-color: #fff;
-    text-align: center;
-    padding: 30px 20px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 20px;
 }
+
+
 
 #footer .footer-top .footer-info h3 {
   font-size: 18px;
@@ -2382,14 +2391,14 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
-  color: #fff;
+  color: #000;
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #ffc107;
-  color: #fff;
+  color: #000;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -2402,7 +2411,7 @@ section {
 
 #footer .footer-top .social-links a:hover {
   background: #efc956;
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
