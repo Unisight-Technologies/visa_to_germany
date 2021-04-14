@@ -124,18 +124,23 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   }
 }
 
-
-
-
-
 #header {
   height: 80px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  top:40px;
   background: #b56928 !important;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
+
+@media (max-width: 600px) {
+  #header {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
 
 #header.header-transparent {
   background: none;
@@ -168,11 +173,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 }
 
-@media (max-width: 992px) {
-  #header {
-    top: 0;
-  }
-}
 
 #main {
   margin-top: 80px;
@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 /* google */
 
 
-.#main{
+.main{
   margin-top: 100px;
 }
 
@@ -554,6 +554,21 @@ h1, h2, h3, h4, h5, h6, .font-primary {
     transform: translateX(-50%) translateY(20px) rotate(4deg);
   }
 }
+
+.caption{
+  margin-top: -60%; 
+  font-family: 'boxicons';  
+  font-size:xxx-large;
+}
+
+@media (max-width: 600px) {
+.caption{
+  font-size: x-large;
+  font-family: 'boxicons';
+  margin-top: -50%;
+}
+}
+
 
 /*--------------------------------------------------------------
 # Hero No Slider Section
