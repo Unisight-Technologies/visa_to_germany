@@ -60,21 +60,6 @@ class Feespage(TemplateView):
 
 class Familypage(TemplateView):
     template_name= "family_reunion.html"
-class Comingpage(TemplateView):
-    template_name= "coming_soon.html"
-
-class Spain_Comingpage(TemplateView):
-    template_name= "spain_coming_soon.html"
-
-class Denmark_Comingpage(TemplateView):
-    template_name= "Denmark_coming_soon.html"
-
-class Italy_Comingpage(TemplateView):
-    template_name= "Italy_coming_soon.html"
-
-class Greece_Comingpage(TemplateView):
-    template_name= "Greece_coming_soon.html"
-
 class policy(TemplateView):
     template_name= "policy.html"
 

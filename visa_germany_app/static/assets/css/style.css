@@ -744,6 +744,7 @@ section {
   border: 1px solid #fff;
   width: -webkit-fill-available;
   height:85%;
+  width: 100%;
 }
 
 .services .icon {

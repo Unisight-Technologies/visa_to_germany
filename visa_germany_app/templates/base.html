@@ -58,7 +58,7 @@
 
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-  <div class="container-nav d-flex align-items-center" style="margin-left: 3%;">
+  <div class="container-nav d-flex align-items-center">
 
     <div class="logo">
       <a href="{% url 'index' %}" class="logo1"><img src="{% static 'assets/img/VisaTo_GERMANY-logo-8E-final.jpg' %}" alt="" class="img-fluid"></a>
@@ -69,12 +69,12 @@
 
     <div class="flags">
 
-    <a href="#"> <img src="{% static 'assets/img/Animated-Flag-Germany.gif' %}" style="height:40px"> </a>
+    <a href="#"> <img src="{% static 'assets/img/Animated-Flag-Germany.gif' %}" style="height:45px"> </a>
 
 </div>
 
     <div class="nav-inspiring">
-      <p class="font-italic">"Unity and justice and freedom"<br></p>
+      <p class="font-italic">"Unity and justice and freedom"</p>
     </div>
 
 
@@ -82,19 +82,6 @@
       <ul>
         <!-- <li><a class="active " href="{% url 'index' %}">Home</a></li> -->
         <li id="news-btn" class="news-btn"><a href="{% url 'blogs_news' %}">Breaking News</a></li>
-        <li><a href="{% url 'aboutus' %}">About Us</a></li>
-        <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="{% url 'student_visa' %}"> Student Visa</a></li>
-            <li><a href="{% url 'working_visa' %}"> Germany Working Visa</a></li>
-            <!-- <li><a href="{% url 'tourist_visa' %}"> Germany Tourist and Visitor Visa</a></li> -->
-            <!-- <li><a href="{% url 'language_visa' %}"> German Language Course Visa</a></li> -->
-            <!-- <li><a href="{% url 'family_reunion' %}"> Germany Family Reunion Visa</a></li> -->
-            <li><a href="{% url 'visa_fees' %}"> Germany Visa Fees</a></li>
-
-          </ul>
-        </li>
-
         <li class="dropdown"><a href="#"><span>Migration Services</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li> <a href="https://visatoitaly.com/">Italy</a> </li>
@@ -112,7 +99,16 @@
 
           </ul>
         </li>
-        <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+        <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{% url 'student_visa' %}"> Student Visa</a></li>
+            <li><a href="{% url 'working_visa' %}"> Germany Working Visa</a></li>
+            <li><a href="{% url 'visa_fees' %}"> Germany Visa Fees</a></li>
+
+          </ul>
+        </li>
+        <li><a href="{% url 'aboutus' %}">About Us</a></li>
+      <li><a href="{% url 'contactus' %}">Contact</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
@@ -161,7 +157,7 @@
             <li><i class="bx bx-chevron-right"></i> <a href="{% url 'student_visa' %}">Student Visa</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="{% url 'working_visa' %}">Germany Working Visa</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="{% url 'visa_fees' %}">Germany Visa Fees</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'contactus' %}">Contact Us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'contactus' %}">Contact </a></li>
           </ul>
         </div>
 
