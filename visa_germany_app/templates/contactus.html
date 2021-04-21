@@ -12,7 +12,7 @@
     <h2>Contact</h2>
 
   </div>
-     
+
 
       </div>
     </section> -->
@@ -21,7 +21,7 @@
     <h2>Contact</h2>
 
   </div>
-    
+
 
     <!-- ======= Contact Section ======= -->
     <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
@@ -90,14 +90,36 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div> -->
-              <div class="text-center"><button type="submit">Send Message</button></div>
+                      <!-- alert-messages -->
+              <div class="row login" style="width: 100%;  text-align: center;" class="row">
+              {% if messages %}
+              {% for message in messages %}
+              {% if message.tags == 'error' %}
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              {% else %}
+              <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+              {% endif %}
+             {{ message }}
+              <button type="button" class="close" style="background:transparent; border:black 1px solid;" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+             </button>
+             </div>
+              {% endfor %}
+              {% endif %}
+             </div>
+             <!-- alert-messages-ends -->
+
+              <div class="g-recaptcha" data-sitekey="6LdEmLAaAAAAALi8Y9IAZ4TCGQiu5rY4PwzgQxMc"></div>
+            <p></p>
+              <div class="text-center"><button class="submit1" type="submit">Send Message</button></div>
             </form>
-          </div>
+            </div>
+              </div>
 
-        </div>
+              </div>
+              </section>
+<!-- End Contact Section -->
 
-      </div>
-    </section><!-- End Contact Section -->
     <style>
   #chartdiv {
     width: 100%;
@@ -106,15 +128,15 @@
     padding-bottom: 30px;
   }
   </style>
- 
+
   <section>
- 
+
     <div class="section-title">
- 
+
       <h1 style="color: black;">Countries we serve</h1>
       <p></p>
     </div>
- 
+
     <div class="map" id="chartdiv">
       <div style="width: 100%;
     height: 100%;
@@ -122,14 +144,14 @@
     overflow: hidden;
     left: -0.5px;
     top: -0.5px;">
- 
+
     </div>
     <!-- <div class="map" id="chartdiv"></div> -->
- 
+
   </section>
  <!-- End Why Us Section -->
- 
-    
+
+
 
   </main>
 
@@ -142,6 +164,7 @@
 <script src="https://cdn.amcharts.com/lib/4/themes/kelly.js"></script>
 <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
 <script src="{% static 'assets/js/map.js' %}"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 
 {% endblock %}

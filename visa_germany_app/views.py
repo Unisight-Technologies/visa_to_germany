@@ -11,6 +11,16 @@ import requests
 from django.contrib import messages
 from django.views.decorators.csrf import csrf_exempt
 
+#RECAPTCHA
+import json
+import urllib
+from django.conf import settings
+import environ
+
+env = environ.Env()
+#reading env files
+environ.Env.read_env()
+
 # Create your views here.
 class Homepage(TemplateView):
     template_name= "index.html"
@@ -29,19 +39,36 @@ class Contactpage(TemplateView):
         subject = form.get('subject')
         message = form.get('message')
 
-        new_contact = models.Contact.objects.create(
+        ''' Begin reCAPTCHA validation '''
+        recaptcha_response = request.POST.get('g-recaptcha-response')
+        url = 'https://www.google.com/recaptcha/api/siteverify'
+        values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+        data = urllib.parse.urlencode(values).encode()
+        req =  urllib.request.Request(url, data=data)
+        response = urllib.request.urlopen(req)
+        result = json.loads(response.read().decode())
+        if result['success']:
+            new_contact = models.Contact.objects.create(
             name=name,
             email=email,
             phone=phone,
             subject=subject,
             message=message
-
-        )
-        new_contact.save()
-        mailHandler.sendMailToUser(name, email)
-        mailHandler.sendMailToVisaToCanada(name, email, phone, subject, message)
-        messages.success(request, "Your query has been successfully submitted. We will get back to you soon.")
-        return redirect("contactus")
+            )
+            new_contact.save()
+            mailHandler.sendMailToUser(request.POST.get('name'), request.POST.get('email'))
+            mailHandler.sendMailToVisaToCanada(request.POST.get('name'), request.POST.get('email'),request.POST.get('phone'),request.POST.get('subject'),request.POST.get('message'))
+            messages.success(request, 'Your message has been sent successfully!')
+            return redirect('index')
+        else:
+            messages.error(request, 'Invalid reCAPTCHA. Please try again.')
+            context={
+            'SITE_KEY': env('RECAPTCHA_SITE_KEY')
+            }
+            return render(request,"contactus.html",context = context)
 
 class Studentpage(TemplateView):
     template_name= "student_visa.html"
